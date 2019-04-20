@@ -18,7 +18,7 @@ haml layouts
 
 ## goal
  - [x] use same template for frontend/backend rendering
- - [ ] use models usable in frontend/backend with different adapters for api/database access
+ - [ ] use models usable in frontend/backend with different adapters for api/database access
  - [ ] create simple setup of api setup for models
  - [ ] support multiple databases
  - [ ] have working tests
