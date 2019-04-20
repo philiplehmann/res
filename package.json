@@ -1,0 +1,14 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "philip lehmann",
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r esm index.js"
+  },
+  "dependencies": {
+    "@res/backend-server": "file:vendor/res/backend/server",
+    "@res/frontend-server": "file:vendor/res/frontend/server"
+  }
+}

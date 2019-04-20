@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{ content: 'text/html; charset=UTF-8', 'http-equiv': 'Content-Type' }
+    %meta{ charset: 'utf-8' }
+    %title React SSR
+    %link{ href: 'index.css', rel: 'stylesheet', type: 'text/css' }
+    %link{ rel: 'icon', type: 'image/png', href: '/img/favicon-32x32.png', sizes: '32x32' }
+  %body
+    #app!= app
+    %script{ src: 'index.js', type: 'text/javascript' }
