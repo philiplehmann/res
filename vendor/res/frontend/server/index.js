@@ -8,14 +8,12 @@ import proxy from 'http-proxy-middleware'
 import Res from '@res/core'
 
 class Server {
-  constructor({ webpackConfig, path }) {
-    this.webpackConfig = webpackConfig
+  constructor({ path }) {
     this.path = path
   }
 
   start() {
     this.app = express()
-    this.app.use(express.static(path.resolve(this.path, 'public')))
     const config = require(path.resolve(this.path, 'config', 'webpack')).default
     const compiler = Webpack(config)
     this.app.use(
@@ -32,6 +30,12 @@ class Server {
       })
     )
     this.app.listen(Res.frontend_port)
+  }
+
+  build() {
+    const config = require(path.resolve(this.path, 'config', 'webpack')).default
+    const compiler = Webpack(config)
+    compiler.run((...args) => console.log(args))
   }
 }
 

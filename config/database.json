@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": null,
+    "password": null,
+    "database": "playground_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "seederStorage": "json"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "playground_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "seederStorage": "json"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "playground_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "seederStorage": "json"
+  }
+}

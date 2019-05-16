@@ -4,12 +4,12 @@ import path from 'path'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import Res from '@res/core'
 
-const WHITE_LIST_ENV = ['HOST', 'PORT', 'BACKEND_HOST', 'BACKEND_PORT', 'GIT_HASH']
+const WHITE_LIST_ENV = []
 
 export default {
   context: path.resolve('.'),
   entry: {
-    index: [
+    'assets/index': [
       path.resolve('app', 'frontend', 'assets', 'styles', `index.scss`),
       path.resolve('app', 'frontend', 'index.js')
     ]

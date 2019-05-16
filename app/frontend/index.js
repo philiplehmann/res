@@ -1,8 +1,12 @@
+/* global ATP_ENV */
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
+import ws from '../../config/ws'
 
-const socket = new WebSocket('ws://localhost:5200/api')
+console.log(ws[ATP_ENV.ENV])
+
+const socket = new WebSocket(ws[ATP_ENV.ENV])
 
 socket.addEventListener('open', (event) => {
   console.log('open', event)

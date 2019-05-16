@@ -1,0 +1,12 @@
+{
+  "name": "@res/backend-model",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "philip lehmann",
+  "license": "MIT",
+  "dependencies": {
+    "@res/backend-model": "file:../model",
+    "pg": "^7.10.0",
+    "sequelize": "^5.7.3"
+  }
+}

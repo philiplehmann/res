@@ -8,7 +8,7 @@ export default merge.smart(config, {
   mode: 'production',
   output: {
     filename: '[name].js',
-    path: path.resolve(`public/assets`),
+    path: path.resolve(`public`),
     publicPath: '/assets/'
   },
   optimization: {

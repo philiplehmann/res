@@ -12,8 +12,10 @@ import Watch from './watch'
 
 class Server {
   static start(dir) {
-    const watcher = new Watch(dir)
-    watcher.change(() => Worker.restart())
+    if (!Res.production) {
+      const watcher = new Watch(dir)
+      watcher.change(() => Worker.restart())
+    }
     Worker.start()
   }
 
@@ -24,6 +26,7 @@ class Server {
 
   start() {
     this.app = express()
+    this.app.use(express.static(path.resolve(this.path, 'public')))
     this.ws = expressWS(this.app)
     this.routes({ app: this.app })
     this.app.ws('/api', (ws, _req) => {

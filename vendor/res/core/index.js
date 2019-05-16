@@ -1,4 +1,5 @@
 require('dotenv').config()
+import sha512 from 'js-sha512'
 
 class Res {
   get environment() {
@@ -31,6 +32,15 @@ class Res {
 
   get frontend_port() {
     return Number(process.env.RES_FRONTEND_PORT) || 5200
+  }
+
+  get hmac() {
+    if (process.env.RES_HMAC) return process.env.RES_HMAC
+    throw 'RES_HMAC not set'
+  }
+
+  sha512(string) {
+    return sha512.hmac(this.hmac, string)
   }
 }
 
