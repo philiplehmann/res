@@ -3,7 +3,7 @@ import express from 'express'
 import Webpack from 'webpack'
 import devMiddleware from 'webpack-dev-middleware'
 import hotMiddleware from 'webpack-hot-middleware'
-import proxy from 'http-proxy-middleware'
+import { createProxyMiddleware } from 'http-proxy-middleware'
 
 import Res from '@res/core'
 
@@ -23,7 +23,7 @@ class Server {
     )
     this.app.use(hotMiddleware(compiler))
     this.app.use(
-      proxy({
+      createProxyMiddleware({
         target: `http://${Res.backend_host}:${Res.backend_port}`,
         xfwd: true,
         ws: true
