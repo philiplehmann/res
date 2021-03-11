@@ -15,5 +15,9 @@
     "@res/backend-model": "file:vendor/res/backend/model",
     "@res/backend-server": "file:vendor/res/backend/server",
     "@res/frontend-server": "file:vendor/res/frontend/server"
+  },
+  "resolutions": {
+    "serialize-javascript": ">=3.1.0",
+    "braces": ">=2.3.1"
   }
 }
