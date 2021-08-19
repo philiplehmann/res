@@ -889,7 +889,7 @@
 "@res/backend-model@file:vendor/res/backend/model":
   version "1.0.0"
   dependencies:
-    "@res/backend-model" "file:../../Library/Caches/Yarn/v6/npm-@res-backend-model-1.0.0-84bd7658-20d7-462e-abe3-0a6ba75d707a-1617121508226/node_modules/@res/model"
+    "@res/backend-model" "file:vendor/res/backend/model"
     pg "^7.10.0"
     sequelize "^5.7.3"
 
@@ -899,7 +899,7 @@
     "@babel/core" "^7.8.7"
     "@babel/preset-react" "^7.8.3"
     "@babel/register" "^7.8.6"
-    "@res/core" "file:../../Library/Caches/Yarn/v6/npm-@res-backend-server-1.0.0-4ce35cf6-3a26-452b-b105-1713a3941f02-1617121508244/node_modules/core"
+    "@res/core" "file:vendor/res/core"
     eslint-plugin-prettier "^3.1.2"
     eslint-plugin-react "^7.19.0"
     express-ws "^4.0.0"
@@ -928,7 +928,7 @@
     "@babel/core" "^7.8.7"
     "@babel/plugin-proposal-class-properties" "^7.8.3"
     "@babel/preset-env" "^7.8.7"
-    "@res/core" "file:../../Library/Caches/Yarn/v6/npm-@res-frontend-server-1.0.0-259093d6-8654-4743-b7bf-77dccc2885cd-1617121508333/node_modules/core"
+    "@res/core" "file:vendor/res/core"
     autoprefixer "^9.7.4"
     babel-eslint "^10.1.0"
     babel-loader "^8.0.6"
@@ -5175,9 +5175,9 @@ path-key@^2.0.1:
   integrity sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-to-regexp@0.1.7:
   version "0.1.7"
